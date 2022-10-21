@@ -47,18 +47,18 @@ const userCpf = () => {
   if (newCpf.validaCpf()) {
     message.style.color = "green";
     message.innerHTML = "Cpf Válido";
-    setInterval(() => {
-      message.innerHTML = "";
-      userCpfNumber.value = "";
-      userCpfNumber.focus();
-    }, 3000);
+      setInterval(() => {
+        message.innerHTML = "";
+        userCpfNumber.value = "";
+        userCpfNumber.focus();
+      }, 3000);
   } else {
     message.style.color = "red";
     message.innerHTML = "Cpf Inválido";
-    setInterval(() => {
-      message.innerHTML = "";
-      userCpfNumber.value = "";
-      userCpfNumber.focus();
-    }, 3000);
+      setInterval(() => {
+        message.innerHTML = "";
+        userCpfNumber.value = "";
+        userCpfNumber.focus();
+      }, 3000);
   }
 };
